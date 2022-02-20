@@ -1,0 +1,48 @@
+
+$bg_blue: #cbeaff;
+$bg_red: #fd5e76;
+$white:#fff;
+$bg_blue: #cbeaff;
+$dark_blue: #2291db;
+.summary {
+   display: flex;
+   .heading {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      span{
+         font-size: 1.2rem;
+      }
+   }
+
+   .badge {
+      display: inline-flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      padding: .5rem 1rem;
+      margin-right: 0.5rem;
+      text-align: center;
+      border-radius: 0 0 5px 5px;   
+      &>span{
+         font-weight: bold;
+      }  
+      &>.red{
+         color:$white;
+      } 
+      &>.blue{
+         color:$dark_blue;
+      }
+      
+      &.bg_red {
+         background-color: $bg_red;
+         margin: 0 1rem;
+         
+      }
+      &.bg_blue {
+         background-color: $bg_blue;
+      }
+   
+   }
+  
+}
